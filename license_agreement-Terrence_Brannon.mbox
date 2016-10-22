@@ -1,0 +1,95 @@
+From metaperl@gmail.com Mon Jul  2 15:21:36 2012
+Return-Path: metaperl@gmail.com
+Received: from zmta06.collab.prod.int.phx2.redhat.com (LHLO
+ zmta06.collab.prod.int.phx2.redhat.com) (10.5.81.13) by
+ zmail14.collab.prod.int.phx2.redhat.com with LMTP; Mon, 2 Jul 2012 09:21:36
+ -0400 (EDT)
+Received: from int-mx10.intmail.prod.int.phx2.redhat.com (int-mx10.intmail.prod.int.phx2.redhat.com [10.5.11.23])
+	by zmta06.collab.prod.int.phx2.redhat.com (Postfix) with ESMTP id 1D079160140
+	for <ppisar@mail.corp.redhat.com>; Mon,  2 Jul 2012 09:21:36 -0400 (EDT)
+Received: from mx1.redhat.com (ext-mx12.extmail.prod.ext.phx2.redhat.com [10.5.110.17])
+	by int-mx10.intmail.prod.int.phx2.redhat.com (8.14.4/8.14.4) with ESMTP id q62DLZRA031587
+	for <ppisar@redhat.com>; Mon, 2 Jul 2012 09:21:35 -0400
+Received: from mail-gg0-f174.google.com (mail-gg0-f174.google.com [209.85.161.174])
+	by mx1.redhat.com (8.14.4/8.14.4) with ESMTP id q62DLY1E015906
+	for <ppisar@redhat.com>; Mon, 2 Jul 2012 09:21:35 -0400
+Received: by gglu4 with SMTP id u4so4541415ggl.33
+        for <ppisar@redhat.com>; Mon, 02 Jul 2012 06:21:33 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=message-id:date:from:user-agent:mime-version:to:cc:subject
+         :references:in-reply-to:content-type:content-transfer-encoding;
+        bh=5yhuNte0HsS7fcA+pmNAQkxQdVMltb6st/cHFlStBl0=;
+        b=Y5vX2ZKAIGhZHOvviE/mj9L8zr4Y30xt/7hAHu3SZsDbku1qG079RYS7cM93O2HepC
+         DLOzhIfEEAmRBfknmYE8Y5qox3vY1aQ3FIh28AzniufySFosbqtqOvZlcCKcDCiuxF5l
+         LuRFk6sCX4YI2yAyx3J1EO581XGBflyQ543uAI1FKR72r5PdSlRMGWLvxFqCobZaxOgH
+         A3GOARrWJqjZomt8HZ3U3FSCdIeZGs5BDCSrqj0bRIvACsindVJAJbpxDwGbSQE7J//b
+         pHKYevEFxlPUlY2m2rd4uC1Tu1MJv4x7n8wM5KW0eoSOCqdGwLutODyzyczHRT0EMIrJ
+         0c+g==
+Received: by 10.236.114.169 with SMTP id c29mr15259124yhh.108.1341235293664;
+        Mon, 02 Jul 2012 06:21:33 -0700 (PDT)
+Received: from [127.0.0.1] (cpe-075-183-162-111.sc.res.rr.com. [75.183.162.111])
+        by mx.google.com with ESMTPS id p29sm24972783yhl.19.2012.07.02.06.21.31
+        (version=SSLv3 cipher=OTHER);
+        Mon, 02 Jul 2012 06:21:32 -0700 (PDT)
+Message-ID: <4FF1A054.8030608@gmail.com>
+Date: Mon, 02 Jul 2012 09:21:24 -0400
+From: Terrence Brannon <metaperl@gmail.com>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/20120614 Thunderbird/13.0.1
+MIME-Version: 1.0
+To: Petr Pisar <ppisar@redhat.com>
+CC: Ilya Zakharevich <cpan@ilyaz.org>,
+        Radoslav Nedyalkov <rnedyalkov@gmail.com>
+Subject: Re: Data-Flow license
+References: <20120626141943.GA17266@dhcp-0-146.brq.redhat.com>
+In-Reply-To: <20120626141943.GA17266@dhcp-0-146.brq.redhat.com>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+X-RedHat-Spam-Score: -0.8  (DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,RCVD_IN_DNSWL_LOW,SPF_PASS)
+X-Scanned-By: MIMEDefang 2.68 on 10.5.11.23
+X-Scanned-By: MIMEDefang 2.68 on 10.5.110.17
+Status: RO
+Content-Length: 1287
+Lines: 40
+
+Petr,
+
+I'm perfectly fine with this statement , so I can formally confirm
+my work on Data-Flow is covered by `the Perl license'.
+
+-- Terrence Brannon
+
+On 6/26/2012 10:19 AM, Petr Pisar wrote:
+> Hello Data-Flow authors,
+>
+> I'd like to deliver Data-Flow Perl package to Fedora Linux distribution.
+> However the code lacks any license which prevents me from doing it.
+>
+> There has been opened ticket on CPAN
+> <https://rt.cpan.org/Public/Bug/Display.html?id=18068> regarding this issue
+> since year 2006.
+>
+> Ilya Zakharevich stated there:
+>
+>> All my modules are "as Perl itself"; but I rarely state this explicitly
+>> (lazyness only).
+> So, I assume the Data-Flow is covered by Artistic or GPL+ license as the perl
+> itself.
+>
+> Data::Flow POD lists all of you as authors of the code:
+>
+>> AUTHOR
+>>    Ilya Zakharevich, cpan@ilyaz.org, with multiple additions from Terrence
+>>    Monroe Brannon and Radoslav Nedyalkov.
+> Could you please each of you confirm you agree with this statement? I.e. your
+> work on Data-Flow is coverd by `the Perl license'? Your coopearion would help
+> me in getting this package into the Fedora distribution.
+>
+> (And actually reuploding the tar ball to PAUSE with proper license declaration
+> would help other distributors greatly.)
+>
+> -- Petr Pisar
+>
+
+
+
